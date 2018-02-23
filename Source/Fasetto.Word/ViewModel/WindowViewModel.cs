@@ -64,7 +64,7 @@ namespace Fasetto.Word
         /// <summary>
         /// The size of the resize border around the window
         /// </summary>
-        public int ResizeBorder => mWindow.WindowState == WindowState.Maximized ? 0 : 4;
+        public int ResizeBorder => Borderless ? 0 : 6;
 
         /// <summary>
         /// The size of the resize border around the window, taking into account the outer margin
@@ -117,6 +117,11 @@ namespace Fasetto.Word
         /// The height of the title bar / caption of the window
         /// </summary>
         public GridLength TitleHeightGridLength => new GridLength(TitleHeight + ResizeBorder);
+
+        /// <summary>
+        /// The current page of the application
+        /// </summary>
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
 
         public bool DimmableOverlayVisible { get; set; }
 
