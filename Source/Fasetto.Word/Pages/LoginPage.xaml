@@ -36,7 +36,6 @@
 
                             <!-- Next button -->
                             <Button Content="Login"
-                                    IsEnabled="{Binding LoginIsRunning}"
                                     local:IsBusyProperty.Value="{Binding LoginIsRunning}"
                                     Command="{Binding LoginCommand}"
                                     CommandParameter="{Binding ElementName=Page}"

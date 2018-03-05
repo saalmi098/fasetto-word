@@ -119,12 +119,25 @@
 
     <Border Background="{StaticResource WordBlueBrush}">
         <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
             <!-- Blue background image -->
             <Grid.Background>
                 <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png"/>
             </Grid.Background>
 
-            <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"/>
+            <Frame x:Name="MainFrame"
+                   Grid.Column="1"
+                   Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"/>
+
+            <!-- Side menu -->
+            <local:SideMenuControl>
+                <Button Content="Test"/>
+            </local:SideMenuControl>
         </Grid>
     </Border>
 </Window>

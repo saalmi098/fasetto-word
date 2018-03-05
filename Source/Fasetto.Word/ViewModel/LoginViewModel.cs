@@ -54,7 +54,7 @@ namespace Fasetto.Word
         {
             await RunCommand(() => LoginIsRunning, async () =>
             {
-                await Task.Delay(20000);
+                await Task.Delay(1000);
 
                 var email = Email;
                 var x = (parameter as IHavePassword).SecurePassword.Unsecure();
