@@ -136,7 +136,7 @@
 
             <!-- Side menu -->
             <local:SideMenuControl>
-                <Button Content="Test"/>
+                <local:ChatListControl/>
             </local:SideMenuControl>
         </Grid>
     </Border>
