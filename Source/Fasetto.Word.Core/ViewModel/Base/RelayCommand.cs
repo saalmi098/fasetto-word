@@ -1,24 +1,24 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace Fasetto.Word
+namespace Fasetto.Word.Core
 {
     /// <summary>
     /// A basic command that runs an action
     /// </summary>
-    public class RelayParameterizedCommand : ICommand
+    public class RelayCommand : ICommand
     {
         /// <summary>
         /// The action to run
         /// </summary>
-        private Action<object> mAction;
+        private Action mAction;
 
         /// <summary>
         /// The event that fires when the <see cref="CanExecute(object)"/> value has changed
         /// </summary>
         public event EventHandler CanExecuteChanged = (sender, e) => { };
 
-        public RelayParameterizedCommand(Action<object> action)
+        public RelayCommand(Action action)
         {
             mAction = action;
         }
@@ -27,7 +27,7 @@ namespace Fasetto.Word
 
         public void Execute(object parameter)
         {
-            mAction?.Invoke(parameter);
+            mAction?.Invoke();
         }
     }
 }

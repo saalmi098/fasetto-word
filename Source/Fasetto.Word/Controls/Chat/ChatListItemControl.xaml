@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Fasetto.Word"
+             xmlns:core="clr-namespace:Fasetto.Word.Core"
              mc:Ignorable="d"
              Height="70"
              d:DesignHeight="70" d:DesignWidth="300">
@@ -105,7 +106,7 @@
     </UserControl.Resources>
     
 
-    <ContentControl d:DataContext="{x:Static local:ChatListItemDesignModel.Instance}"
+    <ContentControl d:DataContext="{x:Static core:ChatListItemDesignModel.Instance}"
                     Style="{StaticResource ContentStyle}"/>
 
 </UserControl>
