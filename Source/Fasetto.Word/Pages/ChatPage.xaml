@@ -14,6 +14,6 @@
                    Foreground="White"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="{StaticResource FontSizeLarge}"/>
+                   FontSize="{StaticResource FontSizeXXLarge}"/>
     </Border>
 </local:BasePage>

@@ -26,7 +26,7 @@
                                    Foreground="{StaticResource WordBlueBrush}"/>
 
                             <!-- Sign up subtext -->
-                            <TextBlock Text="It's about to get fun" FontSize="{StaticResource FontSizeRegular}"
+                            <TextBlock Text="It's about to get fun" FontSize="{StaticResource FontSizeLarge}"
                                        Foreground="{StaticResource ForegroundDarkBrush}" Margin="0 0 0 20"/>
 
                             <!-- Email -->

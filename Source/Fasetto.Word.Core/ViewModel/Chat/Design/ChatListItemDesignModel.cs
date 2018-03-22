@@ -24,6 +24,5 @@
             NewContentAvailable = true;
         }
         #endregion
-
     }
 }
